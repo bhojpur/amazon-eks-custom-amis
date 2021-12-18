@@ -120,7 +120,7 @@ curl -sL -o /var/lib/kubelet/kubeconfig https://raw.githubusercontent.com/awslab
 chown root:root /var/lib/kubelet/kubeconfig
 
 #curl -sL -o /etc/systemd/system/kubelet.service https://raw.githubusercontent.com/awslabs/amazon-eks-ami/master/files/kubelet.service
-cp /etc/packer/files/gitpod/kubelet.service /etc/systemd/system/kubelet.service
+cp /etc/packer/files/bhojpur/kubelet.service /etc/systemd/system/kubelet.service
 chown root:root /etc/systemd/system/kubelet.service
 
 configure_kubelet_environment
@@ -139,7 +139,7 @@ curl -sL -o /etc/eks/eni-max-pods.txt https://raw.githubusercontent.com/awslabs/
 #curl -sL -o /etc/eks/bootstrap.sh https://raw.githubusercontent.com/awslabs/amazon-eks-ami/master/files/bootstrap.sh
 #chmod +x /etc/eks/bootstrap.sh
 
-cp /etc/packer/files/gitpod/bootstrap.sh /etc/eks/bootstrap.sh
+cp /etc/packer/files/bhojpur/bootstrap.sh /etc/eks/bootstrap.sh
 chown root:root /etc/eks/bootstrap.sh
 
 ################################################################################
