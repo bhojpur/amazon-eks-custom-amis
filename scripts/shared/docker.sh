@@ -94,7 +94,7 @@ EOF
 
   mkdir -p /etc/containerd /etc/containerd/certs.d
 
-  cp /etc/packer/files/gitpod/containerd.toml /etc/containerd/config.toml
+  cp /etc/packer/files/bhojpur/containerd.toml /etc/containerd/config.toml
 
   cp /usr/local/lib/systemd/system/* /lib/systemd/system/
   sed -i 's/--log-level=debug//g' /lib/systemd/system/stargz-snapshotter.service
