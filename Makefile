@@ -74,9 +74,14 @@ build-ubuntu2004-1.19:
 build-ubuntu2004-1.20:
 	$(MAKE) build PACKER_FILE=amazon-eks-node-ubuntu2004.json eks_version=$(EKS_120_VERSION) eks_build_date=2021-04-12
 
+# Ubuntu 21.10
+#-----------------------------------------------------
 # https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html
-build-ubuntu2004-1.21:
-	$(MAKE) build PACKER_FILE=amazon-eks-node-ubuntu2004.json eks_version=$(EKS_121_VERSION) eks_build_date=2021-12-06
+build-ubuntu2110-1.20:
+	$(MAKE) build PACKER_FILE=amazon-eks-node-ubuntu2110.json eks_version=$(EKS_120_VERSION) eks_build_date=2021-04-12
+
+build-ubuntu2110-1.21:
+	$(MAKE) build PACKER_FILE=amazon-eks-node-ubuntu2110.json eks_version=$(EKS_121_VERSION) eks_build_date=2021-07-05
 
 # RHEL 7
 #-----------------------------------------------------
